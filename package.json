@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "author": "xujiang <xujiang156@qq.com>",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.1.4",
+    "antd": "^5.7.2",
+    "antd-img-crop": "^4.12.2",
+    "axios": "^1.4.0",
+    "qrcode.react": "^3.1.0",
+    "umi": "^4.0.72",
+    "weixin-js-sdk": "^1.6.0",
+    "xijs": "^1.2.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "@umijs/plugins": "^4.0.72",
+    "typescript": "^5.0.3"
+  }
+}

@@ -1,0 +1,44 @@
+.home {
+    display: flex;
+    margin: 16px 80px;
+    @media screen and (max-width: 500px){
+        margin: 16px;
+    }
+    .list {
+        flex: 1;
+    }
+    .cors {
+        margin-top: 124px;
+        padding: 16px 16px 0;
+        width: 180px;
+        min-height: 180px;
+        border-radius: 6px;
+        background-color: #fff;
+        align-self: flex-start;
+        .corTitle {
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .cor {
+            height: 46px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+            text-align: center;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    @media screen and (max-width: 1150px){
+        .cors {
+            display: none;
+        }  
+    }
+    @media screen and (max-width: 800px){
+        .list {
+            width: 100%;
+        }  
+    }
+}

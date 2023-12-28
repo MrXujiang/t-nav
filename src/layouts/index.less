@@ -1,0 +1,141 @@
+.wrap {
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  .navs {
+    background-color: #fff;
+    padding: 8px 80px 10px;
+    display: flex;
+    .logo {
+      margin-right: 20px;
+      img {
+        width: 40px;
+        vertical-align: middle;
+      }
+      span {
+        margin-left: 6px;
+        font-size: 18px;
+        font-weight: bold;
+        span {
+          font-size: 12px;
+          transform: translateY(-6px);
+          font-weight: normal;
+        }
+        @media screen and (max-width: 1100px){
+          span {
+              display: none;
+          }  
+        }
+        @media screen and (max-width: 500px){
+          & {
+              font-size: 16px;
+          }  
+        }
+      }
+    }
+    @media screen and (max-width: 500px){
+      & {
+        padding: 8px 15px 10px;
+      }
+    }
+    .searchArea {
+      margin-left: auto;
+      width: 400px;
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      .menuItem {
+        padding-right: 26px;
+        cursor: pointer;
+      }
+    }
+    @media screen and (max-width: 1260px){
+      .searchArea {
+          width: 310px;
+      }  
+    }
+    @media screen and (max-width: 960px){
+      .menu {
+        // display: none;
+        .menuItem:nth-child(n+2) {
+          display: none;
+        }
+      }  
+    }
+    @media screen and (max-width: 800px){
+      .searchArea {
+        width: 260px;
+      } 
+      .menu {
+        .menuItem:nth-child(n+1) {
+          display: none;
+        }
+      }
+    }
+    @media screen and (max-width: 641px){
+      .searchArea {
+        width: 200px;
+      } 
+    }
+    @media screen and (max-width: 590px){
+      .menu {
+        display: none;
+      }
+    }
+    
+  }
+  main {
+    min-height: calc(100vh - 220px);
+  }
+  footer {
+    background-color: #fff;
+    .first {
+      max-width: 1024px;
+      margin: 0 auto;
+      padding: 16px 0 18px;
+      display: flex;
+      align-items: center;
+      .code {
+        img {
+          width: 100px;
+        }
+      }
+      .content {
+        margin-left: 12px;
+        font-size: 14px;
+        .title {
+          font-size: 18px;
+          padding-bottom: 10px;
+        }
+        .desc {
+          padding-bottom: 10px;
+        }
+        .friendLink {
+          a {
+            color: #1677ff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .second {
+      padding: 2px 0 5px;
+      text-align: center;
+      font-size: 12px;
+      a {
+        margin-left: 4px;
+      }
+    }
+  }
+  @media screen and (max-width: 800px){
+    footer {
+      .first {
+        justify-content: center;
+      }
+      .second {
+        padding: 0 30px;
+      }
+    }  
+  }
+}
